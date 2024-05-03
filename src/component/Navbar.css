@@ -1,0 +1,23 @@
+.fixed-component {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0; /* Set right to 0 to make it stretch to the right edge of the page */
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 1000;
+  }
+
+ 
+  
+
+ /* Center the brand */
+.navbar-brand {
+  margin-left: 20px;
+   
+}
+
+/* Align logout link to the right */
+.ml-auto {
+    margin-left: auto !important;
+}

@@ -1,0 +1,51 @@
+.createpost{
+    width: 500px;
+    height: 350px;
+    margin-top: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.postuser{
+    margin-top: 30px;
+    height: 50px;
+    width: 440px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+.allbtn{
+    margin: 30px;
+}
+
+ .btns{
+    margin: 10px;
+    width: 70%;
+    background-color: rgb(12, 227, 51);
+    color: white;
+}
+.btn-width{
+    width: 300px;
+    margin: 10px;
+}
+
+/* .linkdivtwo{
+    width: 200px;
+    height: 30px;
+    background-color: blue;
+    margin-left: 50px;
+    margin-top: 20px;
+    border-radius: 5px;
+   
+} */
+
+.linktwo{
+     text-decoration: none;
+   
+    color: white;
+  
+}
+
+
+

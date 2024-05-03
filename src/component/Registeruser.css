@@ -1,0 +1,99 @@
+/* styles.css */
+
+/* Container styles */
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading styles */
+  .container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  /* Label styles */
+  .container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  /* Input field styles */
+  .container input[type="text"],
+  .container input[type="email"],
+  .container input[type="number"],
+  .container input[type="password"],
+  .container select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  /* Error message styles */
+  .container div {
+    color: red;
+    margin-bottom: 10px;
+  }
+  
+  /* Button styles */
+  .container button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Link styles */
+  .container a {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  /* Link hover styles */
+  .container a:hover {
+    text-decoration: underline;
+  }
+
+
+
+/* styles.css */
+
+/* Container styles */
+.btn-side {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly; /* Add space between buttons */
+    margin-top: 20px; /* Add some spacing */
+  }
+
+  .loginnext{
+    background-color: white;
+    color: black;
+    width: 97px;
+    border-radius: 5px;
+    
+
+  }
+
+ 
+ 
+  
+
+ 

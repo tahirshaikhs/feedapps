@@ -1,0 +1,11 @@
+.btn-main{
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-register{
+    background-color: white;
+    color: black;
+    width: 97px;
+    border-radius: 5px;
+}  

@@ -1,0 +1,16 @@
+.tabled {
+    display: flex;
+    justify-content: space-between; /* Add space between buttons */
+    margin: 10px;
+    padding: 10px;
+}
+
+.tabled button{
+    margin-right: 10px;
+}
+
+.tthead{
+    
+        background-color: blue;
+        color: white;
+}
