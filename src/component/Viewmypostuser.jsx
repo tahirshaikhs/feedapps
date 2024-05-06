@@ -60,13 +60,15 @@ function Viewmypostuser() {
 
     return (
         <>
-        <CustomNavbar/>
-        <div className="first" style={{ margin:"50px"}}>
+            <CustomNavbar />
+            <h2 className="mt-5 ">Pending Post</h2>
+        <div className="container bg-primary mt-4">
             {userPosts.length === 0 ? (
                 <div>Create your post first.</div>
-            ) : (
+                ) : (
+                        
                 userPosts.map(post => (
-                    <div key={post.id} className="second">
+                    <div key={post.id} className="card">
                         {editingId === post.id ? (
                             <div>
                                 <input
@@ -78,15 +80,15 @@ function Viewmypostuser() {
                             </div>
                         ) : (
                             <div>
-                                <p>{post.data}</p>
-                                <p>Created: {post.username}</p>
-                                <p>Date: {post.date}</p>
+                                <p  className="text-black">{post.data}</p>
+                                <p className="text-black">Created: {post.username}</p>
+                                <p className="text-black">Date: {post.date}</p>
                                 
-                                <button onClick={() => handleDelete(post.id)} className="btn btn-danger mr-2">Delete</button>
+                                <button onClick={() => handleDelete(post.id)} className="btn btn-danger">Delete</button>
                                 <button onClick={() => {
                                     setEditData(post.data);
                                     setEditingId(post.id);
-                                }} className="btn btn-success">Update</button>
+                                }} className="btn btn-success mt-3">Update</button>
                             </div>
                         )}
                     </div>

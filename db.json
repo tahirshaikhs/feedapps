@@ -161,19 +161,179 @@
       "role": "user"
     },
     {
-      "id": "cfdb",
-      "name": "tahir",
-      "email": "tahir@shkjhf.com",
-      "phone": "8520369741",
-      "password": "9865321456",
-      "role": "user"
-    },
-    {
       "id": "4f1e",
       "name": "x",
       "email": "tahir@gmail.com",
       "phone": "9685123698",
       "password": "98798745",
+      "role": "user"
+    },
+    {
+      "id": "7fbe",
+      "name": "rolecheck",
+      "email": "rolecheck@gmail.com",
+      "phone": "9876543219",
+      "password": "12345678",
+      "role": "User"
+    },
+    {
+      "id": "dcb4",
+      "name": "check",
+      "email": "rolecheck@gmail.com",
+      "phone": "9876543212",
+      "password": "12345678",
+      "role": "user"
+    },
+    {
+      "id": "3a52",
+      "name": "tt234",
+      "email": "tahir222@gmail.com",
+      "phone": "2345678900",
+      "password": "12345678",
+      "role": "user"
+    },
+    {
+      "id": "a147",
+      "name": "tetss",
+      "email": "tft@gmail.com",
+      "phone": "1234567890",
+      "password": "12345678",
+      "role": "user"
+    },
+    {
+      "id": "5095",
+      "name": "ttt",
+      "email": "rff@gmail.com",
+      "phone": "1234567890",
+      "password": "232312",
+      "role": "user"
+    },
+    {
+      "id": "df78",
+      "name": "gfgfgc",
+      "email": "tahir233@gmail.com",
+      "phone": "1234567890",
+      "password": "djhhjcd",
+      "role": "user"
+    },
+    {
+      "id": "77d8",
+      "name": "fsgdf",
+      "email": "testhh@gmail.com",
+      "phone": "1234567890",
+      "password": "sdkjfghdf",
+      "role": "user"
+    },
+    {
+      "id": "565f",
+      "name": "jkjgdjhd",
+      "email": "dkjjhj@gmail.com",
+      "phone": "9087654320",
+      "password": "sbdjhsd",
+      "role": "user"
+    },
+    {
+      "id": "d799",
+      "name": "xscbbnsc",
+      "email": "hsgg@gmail.com",
+      "phone": "9087654345",
+      "password": "xsm,nmsx n",
+      "role": "user"
+    },
+    {
+      "id": "3ec8",
+      "name": "jsbdjhgd",
+      "email": "euyeyg@gmail.com",
+      "phone": "1234567890",
+      "password": "dmnsnbdjd",
+      "role": "user"
+    },
+    {
+      "id": "9c25",
+      "name": "sdnk",
+      "email": "rttrt@gmail.com",
+      "phone": "1234567890",
+      "password": "kjjjhgsd",
+      "role": "user"
+    },
+    {
+      "id": "9924",
+      "name": "kjshdh",
+      "email": "tadd@gmail.com",
+      "phone": "9098765432",
+      "password": "hwgdudh",
+      "role": "user"
+    },
+    {
+      "id": "31a0",
+      "name": "msndhjd",
+      "email": "dkjsdj@gmail.com",
+      "phone": "9087665678",
+      "password": "dsbdjhds",
+      "role": "user"
+    },
+    {
+      "id": "76a6",
+      "name": "xsddd",
+      "email": "sjh@gmail.com",
+      "phone": "8878887876",
+      "password": "ssdkjsb",
+      "role": "user"
+    },
+    {
+      "id": "d026",
+      "name": "mnsmb",
+      "email": "gjhsgd@gmail.com",
+      "phone": "1234567890",
+      "password": "xmshff",
+      "role": "user"
+    },
+    {
+      "id": "d2a7",
+      "name": "tahir",
+      "email": "ttttt@gmail.com",
+      "phone": "1234567890",
+      "password": "1234556",
+      "role": "user"
+    },
+    {
+      "id": "11af",
+      "name": "navbar",
+      "email": "navbar@gmail.com",
+      "phone": "1234567890",
+      "password": "12345678",
+      "role": "user"
+    },
+    {
+      "id": "339f",
+      "name": "testcheck",
+      "email": "testcheck@gmail.com",
+      "phone": "9876543210",
+      "password": "12345678",
+      "role": "user"
+    },
+    {
+      "id": "0226",
+      "name": "finalchecks",
+      "email": "fincalchecks@gmail.com",
+      "phone": "9876545678",
+      "password": "12345678",
+      "role": "user"
+    },
+    {
+      "id": "8bcb",
+      "name": "Testcheckf",
+      "email": "testcheckf@gmail.com",
+      "phone": "8765456789",
+      "password": "12345678",
+      "role": "user"
+    },
+    {
+      "id": "5de7",
+      "name": "Rahil",
+      "email": "rahil@gmail.com",
+      "phone": "1234567890",
+      "password": "12345678",
       "role": "user"
     }
   ],
@@ -243,12 +403,6 @@
       "id": "acc9"
     },
     {
-      "id": "a6e1",
-      "data": "",
-      "username": "tahir",
-      "date": "4/27/2024"
-    },
-    {
       "data": "tahir shaikh welcome to feed app2",
       "date": "28/04/2024",
       "username": "tahir",
@@ -307,6 +461,108 @@
       "data": "sahil second post",
       "username": "sahil",
       "date": "5/3/2024"
+    },
+    {
+      "data": "navbar post update",
+      "date": "04/05/2024",
+      "username": "navbar",
+      "id": "55e5"
+    },
+    {
+      "id": "9133",
+      "data": "hhh",
+      "username": "navbar",
+      "date": "5/4/2024"
+    },
+    {
+      "id": "3558",
+      "data": "dsds",
+      "username": "navbar",
+      "date": "5/4/2024"
+    },
+    {
+      "id": "e41b",
+      "data": "dsds",
+      "username": "navbar",
+      "date": "5/4/2024"
+    },
+    {
+      "data": "first post updted",
+      "date": "04/05/2024",
+      "username": "testcheck",
+      "id": "ca2d"
+    },
+    {
+      "id": "9440",
+      "data": "test check first post",
+      "username": "Testcheckf",
+      "date": "5/5/2024"
+    },
+    {
+      "id": "8240",
+      "data": "second post",
+      "username": "Testcheckf",
+      "date": "5/5/2024"
+    },
+    {
+      "id": "14cc",
+      "data": "third",
+      "username": "Testcheckf",
+      "date": "5/5/2024"
+    },
+    {
+      "id": "8a94",
+      "data": "four",
+      "username": "Testcheckf",
+      "date": "5/5/2024"
+    },
+    {
+      "id": "25d0",
+      "data": "five",
+      "username": "Testcheckf",
+      "date": "5/5/2024"
+    },
+    {
+      "id": "fb8c",
+      "data": "six",
+      "username": "Testcheckf",
+      "date": "5/5/2024"
+    },
+    {
+      "id": "209e",
+      "data": "six",
+      "username": "Testcheckf",
+      "date": "5/5/2024"
+    },
+    {
+      "id": "6215",
+      "data": "seven",
+      "username": "Testcheckf",
+      "date": "5/5/2024"
+    },
+    {
+      "id": "abbf",
+      "data": "eight",
+      "username": "Testcheckf",
+      "date": "5/5/2024"
+    },
+    {
+      "id": "5e22",
+      "data": "nine",
+      "username": "Testcheckf",
+      "date": "5/5/2024"
+    },
+    {
+      "id": "e6cb",
+      "data": "ten",
+      "username": "Testcheckf",
+      "date": "5/5/2024"
+    },
+    {
+      "data": "My first rahil post updated",
+      "date": "05/05/2024",
+      "username": "Rahil",
+      "id": "2198"
     }
   ],
   "viewmypost": [
@@ -591,6 +847,108 @@
       "data": "sahil second post",
       "username": "sahil",
       "date": "5/3/2024"
+    },
+    {
+      "id": "55e5",
+      "data": "navbar post",
+      "username": "navbar",
+      "date": "5/4/2024"
+    },
+    {
+      "id": "55e5",
+      "data": "navbar post update",
+      "date": "04/05/2024",
+      "username": "navbar"
+    },
+    {
+      "id": "ca2d",
+      "data": "first post",
+      "username": "testcheck",
+      "date": "5/4/2024"
+    },
+    {
+      "id": "9440",
+      "data": "test check first post",
+      "username": "Testcheckf",
+      "date": "5/5/2024"
+    },
+    {
+      "id": "8240",
+      "data": "second post",
+      "username": "Testcheckf",
+      "date": "5/5/2024"
+    },
+    {
+      "id": "8a94",
+      "data": "four",
+      "username": "Testcheckf",
+      "date": "5/5/2024"
+    },
+    {
+      "id": "14cc",
+      "data": "third",
+      "username": "Testcheckf",
+      "date": "5/5/2024"
+    },
+    {
+      "id": "25d0",
+      "data": "five",
+      "username": "Testcheckf",
+      "date": "5/5/2024"
+    },
+    {
+      "id": "fb8c",
+      "data": "six",
+      "username": "Testcheckf",
+      "date": "5/5/2024"
+    },
+    {
+      "id": "209e",
+      "data": "six",
+      "username": "Testcheckf",
+      "date": "5/5/2024"
+    },
+    {
+      "id": "6215",
+      "data": "seven",
+      "username": "Testcheckf",
+      "date": "5/5/2024"
+    },
+    {
+      "id": "abbf",
+      "data": "eight",
+      "username": "Testcheckf",
+      "date": "5/5/2024"
+    },
+    {
+      "id": "5e22",
+      "data": "nine",
+      "username": "Testcheckf",
+      "date": "5/5/2024"
+    },
+    {
+      "id": "5e22",
+      "data": "nine",
+      "username": "Testcheckf",
+      "date": "5/5/2024"
+    },
+    {
+      "id": "e6cb",
+      "data": "ten",
+      "username": "Testcheckf",
+      "date": "5/5/2024"
+    },
+    {
+      "id": "2198",
+      "data": "My first rahil post",
+      "username": "Rahil",
+      "date": "5/5/2024"
+    },
+    {
+      "id": "2198",
+      "data": "My first rahil post updated",
+      "date": "05/05/2024",
+      "username": "Rahil"
     }
   ]
 }

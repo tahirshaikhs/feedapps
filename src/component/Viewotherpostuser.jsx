@@ -23,7 +23,7 @@ function Viewotherpost() {
                     <div key={post.id} className="col-md-4 mb-3">
                         <div className="card">
                             <div className="card-body">
-                                <p className="text-black">{post.data}</p>
+                                <p className="text-black">{post.data}s</p>
                                 <p className="text-black">Date: {post.date}</p>
                                 <p className="text-black">Created: {post.username}</p>
                             </div>

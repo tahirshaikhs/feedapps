@@ -1,7 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import './Registeruser.css'
 import CustomNavbar from "./Navbar";
+import {Container, Button , Alert} from 'react-bootstrap'; 
+import Footer from "./Footer";
 
 
 
@@ -11,9 +13,32 @@ function RegisterTest() {
     const [email, setEmail] = useState("");
     const [phone, setPhone] = useState("");
     const [password, setPassword] = useState("");
-    const [role, setRole] = useState("");
+    const [role, setRole] = useState("user");
     const [errors, setErrors] = useState({});
     const navigate = useNavigate();
+    const [existingUsers, setExistingUsers] = useState([]);
+    const [registerUsers, setRegisterUsers] = useState([]);
+    const [emailExistsError, setEmailExistsError] = useState(false);
+    const [registrationSuccess, setRegistrationSuccess] = useState(false);
+
+   
+
+    useEffect(() => {
+        // Fetch existing users from JSON data to check if email is already registered
+        fetch("http://localhost:3000/register")
+            .then((response) => response.json())
+            .then((data) => {
+                setExistingUsers(data);
+            })
+            .catch((error) => {
+                console.log(error.message);
+            });
+    }, []);
+
+    const handleCloseAlertSuccess = () => {
+        setEmailExistsError(false);
+    };
+    
 
     const handleNameChange = (e) => {
         setName(e.target.value);
@@ -43,12 +68,20 @@ function RegisterTest() {
         }
     };
 
+    const handleCloseAlert = () => {
+        setEmailExistsError(false);
+    };
+
     const handleRoleChange = (e) => {
         setRole(e.target.value);
         if (e.target.value.trim()) {
             setErrors(prevErrors => ({ ...prevErrors, role: "" }));
         }
     };
+
+ 
+
+  
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -61,6 +94,10 @@ function RegisterTest() {
             errors.email = "Email is required";
         } else if (!/\S+@\S+\.\S+/.test(email)) {
             errors.email = "Email is invalid";
+        }
+        else if (existingUsers.some(user => user.email === email)) {
+            setEmailExistsError(true); // Set email exists error to true
+            return; // Prevent further execution
         }
         if (!phone.trim()) {
             errors.phone = "Phone Number is required";
@@ -83,8 +120,16 @@ function RegisterTest() {
                 headers: { "Content-type": "application/json" },
                 body: JSON.stringify(empdata)
             }).then(() => {
-                alert("Register successfully");
-                navigate("/login");
+               
+               
+               // alert("Register successfully");
+                setRegistrationSuccess(true); // Update state on successful registration
+                setTimeout(() => {
+                    setRegistrationSuccess(false);
+                     navigate("/login");// Reset state after a certain time
+                }, 3000);
+              
+                // navigate("/login");
             }).catch((error) => {
                 console.log(error.message);
             });
@@ -96,7 +141,24 @@ function RegisterTest() {
     return (
     
         <>
-            <CustomNavbar/>
+            <CustomNavbar />
+            {registrationSuccess&&(<div className="alert alert-success alert-dismissible fade show d-flex justify-content-between align-items-center" role="alert">
+                Registered successfully!
+                <img src="close.png" alt="Close" className="close" onClick={() => setRegistrationSuccess(false)}/>
+                    
+              
+            </div>)}
+            
+            {emailExistsError && (
+        <div className="alert alert-danger alert-dismissible fade show d-flex justify-content-between align-items-center" role="alert">
+        <span>Email already registered</span>
+        {/* <button type="button" className="close" onClick={handleCloseAlert}> */}
+            <img src="close.png" alt="Close" className="close" onClick={handleCloseAlert} />
+        {/* </button> */}
+    </div>
+            )}
+
+                    
         <form className="container " onSubmit={handleSubmit}>
         <div className="row d-flex justify-content-center">
             <div className="col-md-10">
@@ -125,7 +187,8 @@ function RegisterTest() {
                         value={email} 
                         onChange={handleEmailChange} 
                         placeholder={errors.email ? errors.email : "EMAIL ID"}  
-                    />
+                            />
+                             
                 </div>
                 <div className="form-group">
                     <input 
@@ -139,7 +202,7 @@ function RegisterTest() {
             </div>
             <div className="col-md-10">
                 <div className="form-group">
-                    <select 
+                    {/* <select 
                         name="role" 
                         className={`form-control ${errors.role ? "is-invalid" : role ? "is-valid" : ""}`} 
                         value={role} 
@@ -148,7 +211,7 @@ function RegisterTest() {
                         <option value="">Select Role</option>
                         <option value="user">User</option>
                         <option value="admin">Admin</option>
-                    </select>
+                    </select> */}
                 </div>
                 <div className="btn-side">
                     <div className="loginnext">
@@ -160,7 +223,8 @@ function RegisterTest() {
                 </div>
             </div>
         </div>
-    </form>
+            </form>
+            <Footer/>
     </>
     
     

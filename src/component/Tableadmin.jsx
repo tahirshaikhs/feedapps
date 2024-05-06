@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import './TableAdmin.css'
+import CustomNavbar from "./Navbar";
 
 
 function TableAdmin({ updatePosts }) {
@@ -62,7 +63,8 @@ function TableAdmin({ updatePosts }) {
     };
 
     return <>
-           <div className="container">
+        <CustomNavbar/>
+           <div className="container mt-5">
             <div className="card-title">
                 <h2>Admin Panel</h2>
             </div>
@@ -89,7 +91,7 @@ function TableAdmin({ updatePosts }) {
                                 <td>{post.data}</td>
                                
                                 <td>  <div className="tabled">
-                                    <button onClick={() => handleApprove(post)} class="btn btn-success">Approved</button>
+                                    <button onClick={() => handleApprove(post)} class="btn btn-success">Approve</button>
                                     <button onClick={() => handleDelete(post.id)}  class="btn btn-danger">Delete</button>
                                 </div>  </td>
                                

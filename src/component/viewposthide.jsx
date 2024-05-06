@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import './Viewotherpost.css';
 import CustomNavbar from "./Navbar";
+import Footer from "./Footer";
 
 function Viewotherpost() {
     const [posts, setPosts] = useState([]);
@@ -52,6 +53,7 @@ function Viewotherpost() {
                 ))}
             </div>
             </div>
+            <Footer/>
             </>
     );
 }

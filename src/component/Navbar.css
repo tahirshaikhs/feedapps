@@ -8,6 +8,8 @@
     z-index: 1000;
   }
 
+
+  
  
   
 
@@ -20,4 +22,9 @@
 /* Align logout link to the right */
 .ml-auto {
     margin-left: auto !important;
+}
+
+.oneitem{
+  display: flex;
+  gap: 10px;
 }

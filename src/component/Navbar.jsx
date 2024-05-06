@@ -24,8 +24,9 @@ function CustomNavbar() {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ml-auto">
-                        <Nav.Item>
+                        <Nav.Item className="oneitem">
                             <Nav.Link onClick={handleLogout} className="text-white">LOGOUT</Nav.Link>
+                            <Nav.Link as={Link} to="/Profile" className="text-white">Profile</Nav.Link>
                         </Nav.Item>
                     </Nav>
                 </Navbar.Collapse>

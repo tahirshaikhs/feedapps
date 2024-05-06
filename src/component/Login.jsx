@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import './Login.css'; // Import CSS file for styling
 import userData from './user.json';
+import Footer from './Footer';
 
 const Login = ({ setLoggedIn }) => {
   const [username, setUsername] = useState('');
@@ -19,6 +20,7 @@ const Login = ({ setLoggedIn }) => {
   };
 
   return (
+    <>
     <div className="login-container"> {/* Apply CSS class */}
       <h2 className="login-title">Login</h2> {/* Apply CSS class */}
       <form onSubmit={handleLogin} className="login-form"> {/* Apply CSS class */}
@@ -31,7 +33,11 @@ const Login = ({ setLoggedIn }) => {
         <button type="submit">Login</button>
         {errorMessage && <p className="error-message">{errorMessage}</p>}
       </form>
-    </div>
+
+      </div>
+      <Footer/>
+      </>
+    
   );
 };
 

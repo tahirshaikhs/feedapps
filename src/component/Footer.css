@@ -1,0 +1,9 @@
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    /* Set your desired background color */
+    color: #6c757d; /* Set your desired text color */
+    text-align: center;
+}

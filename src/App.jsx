@@ -24,6 +24,10 @@ import CustomNavbar from './component/Navbar';
 import LoginMain from './component/LoginMain';
 import Approve from './userpost/Approve';
 import Alluser from './userpost/Alluser';
+import Profile from './component/Profile';
+import ApproveAdmin from './adminpost/ApproveAdmin';
+import Alladmin from './adminpost/Alladmin';
+
 
 
 const App = () => {
@@ -43,11 +47,11 @@ const App = () => {
           {/* <Route path="/" element={<RegisterPage />} /> */}
           <Route path="/" element={<RegisterTest />} />
           {/* <Route path="/admin" element={<Adminuser />} /> */}
-          <Route path="/admin" element={<TableAdmin />} />
+          <Route path="/admin" element={<Alladmin />} />
           <Route path="/welcome" element={<Createpost />} />
           <Route path="/Viewotherpost" element={<Viewotherhide />} />
           {/* <Route path="/Viewhide" element={<Viewotherhide />} /> */}
-          <Route path="/viewmypost" element={<Viewmypostuser />} />
+          <Route path="/viewmypost" element={<Alluser />} />
           <Route path="/table" element={<SameAdmin />} />
           <Route path="/Viewhide" element={<Viewotherhide />} />
           
@@ -57,6 +61,15 @@ const App = () => {
 
           {/* userpost */}
           <Route path="/Approve" element={<Alluser />} />
+
+
+          {/* profile */}
+          <Route path="/Profile" element={<Profile />} />
+          
+          {/* adminapprove */}
+          <Route path="/ApproveAdmin" element={<Alladmin />} />
+          
+         
 
    </Routes>
  </Router>
